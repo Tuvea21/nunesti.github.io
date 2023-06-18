@@ -1,0 +1,542 @@
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600&display=swap');
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Montserrat';
+        }
+        
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        /* INICIO */ 
+        #inicio {
+            background: linear-gradient( rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url("img/fondo-inicio.jpg");
+            background-size: cover;
+            background-position: center center;
+            height: 100vh;
+        }
+        
+        #inicio .conteudo header {
+            background-color: rgba(0, 0, 0, .8);
+            position: fixed;
+            width: 100%;
+            z-index: 100;
+            top: 0;
+        }
+        
+        #inicio .conteudo header .conteudo-header {
+            max-width: 1100px;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+        }
+        
+        #inicio .conteudo header .conteudo-header h1 {
+            text-align: center;
+            color: #5be0b8;
+        }
+        
+        #inicio .conteudo header .conteudo-header nav ul {
+            list-style: none;
+            display: flex;
+            align-items: center;
+        }
+        
+        #inicio .conteudo header .conteudo-header nav ul li a {
+            text-decoration: none;
+            color: #fff;
+            margin: 0 12px;
+            font-weight: 400;
+            transition: .5s;
+        }
+        
+        #inicio .conteudo header .conteudo-header nav ul li a:hover {
+            color: #5be0b8;
+        }
+        
+        #inicio .conteudo header .conteudo-header .redes a {
+            text-decoration: none;
+            color: #fff;
+            display: inline-block;
+            margin-left: 10px;
+            transition: .5s;
+        }
+        
+        #inicio .conteudo header .conteudo-header .redes a:hover {
+            color: #5be0b8;
+        }
+        
+        #inicio .conteudo header .conteudo-header .seleccionado {
+            color: #5be0b8;
+        }
+        
+        #inicio .conteudo .apresentacao {
+            max-width: 1100px;
+            height: 100vh;
+            margin: auto;
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        #inicio .conteudo .apresentacao .bemvindo {
+            font-size: 16px;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            letter-spacing: 5px;
+        }
+        
+        #inicio .conteudo .apresentacao h2 {
+            font-size: 55px;
+            margin-bottom: 25px;
+            text-align: center;
+        }
+        
+        #inicio .conteudo .apresentacao h2 span {
+            font-size: 25px;
+            color: #5be0b8;
+        }
+        
+        #inicio .conteudo .apresentacao .descricao {
+            max-width: 700px;
+            margin: 25px auto;
+            font-size: 18px;
+            text-align: center;
+        }
+        
+        #inicio .conteudo .apresentacao a {
+            text-decoration: none;
+            display: inline-block;
+            margin: 25px;
+            padding: 20px 25px;
+            border: 2px solid #fff;
+            border-radius: 50px;
+            color: #fff;
+            font-weight: bold;
+            text-transform: uppercase;
+            transition: .5s;
+        }
+        
+        #inicio .conteudo .apresentacao a:hover {
+            background-color: #5be0b8;
+        }
+        
+        #icono-nav {
+            color: #fff;
+            display: none;
+        }
+       
+
+        /* SOBRE  M I */
+        
+        #sobremim {
+            max-width: 1100px;
+            margin: auto;
+            padding: 100px 15px;
+            color: #111135;
+            display: flex;
+        }
+        
+        #sobremim .contenedor-foto {
+            max-width: 400px;
+            margin-right: 80px;
+        }
+        
+        #sobremim .contenedor-foto img {
+            padding: 20px;
+            width: 100%;
+            border-radius: 20px;
+            background-color: #f3f3f3;
+        }
+        
+        #sobremim .sobremim {
+            margin: 0 40px;
+        }
+        
+        #sobremim .sobremim .titulo-seccion {
+            font-size: 22px;
+            text-transform: uppercase;
+            color: #111135;
+            text-decoration: underline;
+            text-decoration-color: #d3d3d3;
+            text-decoration-thickness: 5px;
+        }
+        
+        #sobremim .sobremim h2 {
+            font-size: 34px;
+            font-weight: bold;
+            margin: 20px 0;
+            letter-spacing: 2px;
+        }
+        
+        #sobremim .sobremim h2 span {
+            color: #5be0b8;
+        }
+        
+        #sobremim .sobremim h3 {
+            font-size: 18px;
+            font-weight: 500;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+            letter-spacing: 1px;
+        }
+        
+        #sobremim .sobremim p {
+            font-size: 14px;
+            line-height: 25px;
+            color: #565656;
+            margin-bottom: 12px;
+        }
+        
+        #sobremim .sobremim a {
+            display: inline-block;
+            text-decoration: none;
+            color: #000;
+            border-radius: 30px;
+            border: 1px solid #000;
+            padding: 10px 20px;
+            margin-top: 30px;
+            transition: .5s;
+        }
+        
+        #sobremim .sobremim a:hover {
+            background-color: #5be0b8;
+            color: #fff;
+        }
+        
+
+        /* SERVICIOS */
+       
+        #servicos {
+            padding: 100px 15px;
+            text-align: center;
+            background-color: #f3f3f3;
+        }
+        
+        #servicos .titulo-serv {
+            text-align: center;
+            font-size: 22px;
+            text-transform: uppercase;
+            color: #111135;
+            text-decoration: underline;
+            text-decoration-color: #d3d3d3;
+            text-decoration-thickness: 5px;
+        }
+        
+        #servicos .fila {
+            display: flex;
+            justify-content: space-between;
+            max-width: 1150px;
+            margin: 30px auto;
+        }
+        
+        #servicos .fila .servico {
+            max-width: 350px;
+            background-color: #fff;
+            padding: 30px;
+            margin: 0 5px;
+            border-radius: 5px;
+            transition: .5s;
+        }
+        
+        #servicos .fila .servico:hover {
+            box-shadow: 5px 5px 10px #565656, -5px -5px 10px #8a8a8a;
+        }
+        
+        #servicos .fila .servico .icone {
+            display: inline-block;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background-color: #d3d3d3;
+            padding: 20px;
+            margin-bottom: 25px;
+        }
+        
+        #servicos .fila .servico h4 {
+            font-size: 22px;
+            margin-bottom: 25px;
+        }
+        
+        #servicos .fila .servico hr {
+            width: 30%;
+            margin: auto;
+            color: #000;
+            margin-bottom: 25px;
+        }
+        
+        #servicos .fila .servico ul {
+            list-style: none;
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 10px;
+        }
+        
+        #servicos .fila .servico p {
+            font-size: 14px;
+            line-height: 22px;
+        }
+       
+        /* seccion S K I L L S */
+        
+        .contentor-skills {
+            background: linear-gradient( #5be0b8, rgba(33, 16, 16, 0.8)), url("img/fondo-skills.jpg");
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            background-size: cover;
+            color: #fff;
+            background-position: center center;
+            padding: 100px 0;
+            text-align: center;
+        }
+        
+        .contentor-skills .skill {
+            max-width: 600px;
+            margin: 30px auto;
+        }
+        
+        .contentor-skills .skill .info {
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        .contentor-skills .skill .lista {
+            display: inline-block;
+            margin-right: 20px;
+            height: 10px;
+            width: 10px;
+            background-color: #fff;
+        }
+        
+        .contentor-skills .skill .barra {
+            background-color: #919191;
+            width: 100%;
+            height: 6px;
+            margin: 10px 0px;
+        }
+        
+        .contentor-skills .skill .barra .barra-progreso1 {
+            background-color: #fff;
+            width: 95%;
+            height: 6px;
+            animation: progreso1 2s forwards;
+        }
+        
+        .contentor-skills .skill .barra .barra-progreso2 {
+            background-color: #fff;
+            width: 90%;
+            height: 6px;
+            animation: progreso2 2s forwards;
+        }
+        
+        .contentor-skills .skill .barra .barra-progreso3 {
+            background-color: #fff;
+            width: 90%;
+            height: 6px;
+            animation: progreso3 2s forwards;
+        }
+        
+        .contentor-skills .skill .barra .barra-progreso4 {
+            background-color: #fff;
+            width: 85%;
+            height: 6px;
+            animation: progreso4 2s forwards;
+        }
+        
+        @keyframes progreso1 {
+            0% {
+                width: 0;
+            }
+            100% {
+                width: 95%;
+            }
+        }
+        
+        @keyframes progreso2 {
+            0% {
+                width: 0;
+            }
+            100% {
+                width: 90%;
+            }
+        }
+        
+        @keyframes progreso3 {
+            0% {
+                width: 0;
+            }
+            100% {
+                width: 60%;
+            }
+        }
+        
+        @keyframes progreso4 {
+            0% {
+                width: 0;
+            }
+            100% {
+                width: 80%;
+            }
+        }
+        
+        
+        /* CONTACTO */
+ 
+        #contacto {
+            padding: 100px 15px;
+            background-color: #f3f3f3;
+        }
+        
+        #contacto .titulo-sec {
+            margin-bottom: 20px;
+        }
+        
+        #contacto .contentor-form {
+            max-width: 1100px;
+            margin: auto;
+        }
+        
+        #contacto .contentor-form .inputs {
+            margin-bottom: 15px;
+        }
+        
+        #contacto .contentor-form .a {
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        #contacto .contentor-form input,
+        #contacto .contentor-form textarea {
+            padding: 20px;
+            border-radius: 20px;
+            border: none;
+            border: 1px solid #919191;
+        }
+        
+        #contacto .contentor-form .a input {
+            width: 48%;
+        }
+        
+        #contacto .contentor-form .input-full {
+            width: 100%;
+        }
+        
+        #contacto .titulo-sec {
+            text-align: center;
+            font-size: 22px;
+            text-transform: uppercase;
+            color: #111135;
+            text-decoration: underline;
+            text-decoration-color: #d3d3d3;
+            text-decoration-thickness: 5px;
+        }
+        
+        #contacto .btn-enviar {
+            display: block;
+            margin: auto;
+            cursor: pointer;
+            transition: .5s;
+            padding: 10px 15px !important;
+        }
+        
+        #contacto .btn-enviar:hover {
+            background-color: #5be0b8;
+            color: #fff;
+        }
+        
+        /* FOOTER */
+        
+        footer {
+            background-color: #000;
+            color: #fff;
+            text-align: center;
+            padding: 30px 0;
+        }
+        
+        footer a {
+            text-decoration: none;
+            color: #fff;
+            display: inline-block;
+            margin: 5px;
+            font-size: 26px;
+        }
+        
+        /* RESPONSIVIDADE */
+        
+        @media screen and (max-width: 800px) {
+            .redes {
+                display: none;
+            }
+            nav {
+                display: none;
+            }
+            nav.responsive {
+                display: block;
+                background-color: rgba(0, 0, 0, .8);
+                width: 100%;
+                position: absolute;
+                top: 48px;
+                left: 0;
+                padding: 10px 0;
+            }
+            nav.responsive ul {
+                display: block !important;
+                text-align: center;
+            }
+            nav.responsive ul li {
+                margin: 5px 0;
+            }
+            #icone-nav {
+                display: block;
+            }
+            #inicio .contentor .apresentacao h2 {
+                font-size: 40px;
+            }
+            /*SOBRE MIM */
+            #sobremim {
+                padding: 50px 0;
+                display: block;
+            }
+            
+            
+            #sobremim .sobremim .titulo-sec {
+                text-align: center;
+            }
+            #sobremim .sobremim h2 {
+                font-size: 25px;
+                text-align: center;
+            }
+            /* SERVICOS */
+            #servicos {
+                padding: 50px 15px;
+            }
+            #servicos .fila {
+                display: block;
+            }
+            #servicos .fila .servico {
+                margin: 10px auto;
+            }
+            /* HABLIDADES */
+            .contentor-skills {
+                padding: 50px 20px;
+            }
+           
+            /* CONTACTO */
+            #contacto {
+                padding: 50px 15px;
+            }
+            #contacto .contentor-form .a {
+                margin-bottom: 15px;
+                display: block;
+            }
+            #contacto .contentor-form .a input {
+                width: 100%;
+                margin-bottom: 15px;
+            }
+        }
